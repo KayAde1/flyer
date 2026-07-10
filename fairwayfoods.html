@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fairway Foods Weekly Flyer</title>
+  </head>
+  <body style="margin:0">
+    <div id="flipp-container"></div>
+    <script src="https://aq.flippenterprise.net/7363/iframe.js"></script>
+    <script>
+      var storefront = new Flipp.Storefront({
+        accessToken: "3ba296dff0f6eaa27039b142a191c519",
+        merchantId: "7363",
+        merchantNameIdentifier: "fairwayfoodsinc"
+      });
+      storefront.renderStorefront(document.querySelector("#flipp-container"));
+    </script>
+  </body>
+</html>
+
